@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="2.js" defer></script>
+    <script src="menu.js" defer></script>
+    <style>
+		.sub-menu{
+			overflow: hidden;
+			height: 0;
+			opacity: 0;
+			transition: all 0.5s ease-in; 
+		}
+		body{
+			background:#CD853F; /* Цвет фона */
+		}
+		#footer {
+    position: fixed; /* Фиксированное положение */
+    left: 0; 
+	bottom: 0; /* Левый нижний угол */
+	text-align: center;		
+    padding: 10px; /* Поля вокруг текста */
+    background: #808080; /* Цвет фона */
+    color: #fff; /* Цвет текста */
+    width: 100%; /* Ширина слоя */
+   }
+	</style>
+</head>
+<body>
+<header id="header">
+<ul class = "menu">
+	<li class="menu-item">
+		<a href="#">Пункт меню 1</a>
+		<ul class="sub-menu">
+			<li>
+				<a href="#" onclick="f()">Подпункт меню 1</a>
+				
+			</li>
+			<li>
+				<a href="#" onclick="f1()">Подпункт меню 2</a>
+			</li>
+			<li>
+				<a href="#" onclick="f2()">Подпункт меню 3</a>
+			</li>
+		</ul>
+	</li>
+	<li class="menu-item">
+		<a href="#">Пункт меню 2</a>
+		<ul class="sub-menu">
+			<li>
+				<a href="#" onclick="f3()">Подпункт меню 1</a>
+			</li>
+			<li>
+				<a href="#" onclick="f4()">Подпункт меню 2</a>
+			</li>
+			<li>
+				<a href="#" onclick="f5()">Подпункт меню 3</a>
+			</li>
+		</ul>
+	</li>
+	<li class="menu-item">
+		<a href="#">Пункт меню 3</a>
+		<ul class="sub-menu">
+			<li>
+				<a href="#" onclick="showPageFirst()">Подпункт меню 1</a>
+		
+			</li>
+			<li>
+				<a href="#" onclick="showPageSecond()">Подпункт меню 2</a>
+			</li>
+			<li>
+				<a href="#" onclick="showPageThird()">Подпункт меню 3</a>
+			</li>
+		</ul>
+	</li>
+</ul>
+</header>
+
+<footer id="footer">&copy; Dzimitry Papkou <div id="time"></div></footer>    
+</body>
+</html>
